@@ -29,6 +29,7 @@ While this example demonstrates a coupling with CUDA, it is possible to integrat
 
 ## Building and Running
 
+In the `main.cu` file you will see the header file `Python.h` being included which pulls in the Python API.  You will need to know the location of this file on your system.  Please be sure to specify the location in the `CONDA_SOFT_DIR` variable which can be found in the `Makefile`.
 
 ## Feature
 
