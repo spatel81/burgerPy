@@ -23,6 +23,9 @@ While this example demonstrates a coupling with CUDA, it is possible to integrat
 
 ## Requirements
 
+- CUDA compiler (e.g. nvcc) that come with CUDA Toolkit (preferably v10.2 or above)
+- Python Environment (v3.7.0 or above)
+- CuPY (see [installation](https://docs.cupy.dev/en/stable/install.html))
 
 ## Building and Running
 
