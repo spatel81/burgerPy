@@ -52,11 +52,12 @@ Run:
 burgerPy$ main.exe
 ```
 
-This should output two `.png` files to your working directory.
+This should output two `.png` files to your working directory. Namely:
 
 ```
 burgerPy$ ls
-Field_evolution.png SVD_Eigenvectors.png CouplingDiagram.png  kernel.h  LICENSE	main.cu  Makefile  output  python_module.py  README.md
+
+Field_evolution.png SVD_Eigenvectors.png ... 
 
 ```
 
