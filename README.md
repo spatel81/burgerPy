@@ -46,6 +46,20 @@ Now make and compile:
 make
 ```
 
+Run:
+
+```
+$ main.exe
+```
+
+## What you should see when you run this on ThetaGPU
+
+###Field Evolution
+![Fields](output/Field_evolution.png "Fields")
+
+###Modal decomposition
+![Modes](output/SVD_Eigenvectors.png "Modes")
+
 ## Feature
 
 ### Using CuPY to enable zero-copy, in-situ analysis
