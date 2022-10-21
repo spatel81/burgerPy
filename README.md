@@ -49,7 +49,15 @@ make
 Run:
 
 ```
-$ main.exe
+burgerPy$ main.exe
+```
+
+This should output two `.png` files to your working directory.
+
+```
+burgerPy$ ls
+Field_evolution.png SVD_Eigenvectors.png CouplingDiagram.png  kernel.h  LICENSE	main.cu  Makefile  output  python_module.py  README.md
+
 ```
 
 ## What you should see when you run this on ThetaGPU
