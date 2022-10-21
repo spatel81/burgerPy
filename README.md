@@ -26,10 +26,24 @@ While this example demonstrates a coupling with CUDA, it is possible to integrat
 - CUDA compiler (e.g. nvcc) that come with CUDA Toolkit (preferably v10.2 or above)
 - Python Environment (v3.7.0 or above)
 - CuPY (see [installation](https://docs.cupy.dev/en/stable/install.html))
+- GNU Make
 
 ## Building and Running
 
-In the `main.cu` file you will see the header file `Python.h` being included which pulls in the Python API.  You will need to know the location of this file on your system.  Please be sure to specify the location in the `CONDA_SOFT_DIR` variable which can be found in the `Makefile`.
+In the `main.cu` file you will see the header file `Python.h` being included which pulls in the Python API.  You will need to know the location of this file on your system.  Please be sure to specify the location in the `PYTHON_SOFT_DIR` variable which can be found in the `Makefile`.
+
+Once you have set the proper variables in the `Makefile`, you will need to activate your Python environment which can be done via 
+
+```
+python -m venv /path/to/directory/for/this/repo
+source /path/to/venv/bin/activate
+``` 
+
+Now make and compile:
+
+```
+make
+```
 
 ## Feature
 
