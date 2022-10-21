@@ -60,13 +60,6 @@ int main() {
      std::cout << "Loaded python module" << std::endl;
 
   std::cout << "Loading functions from module" << std::endl;
-  /*
-  PyObject* pmy_func1 = PyObject_GetAttrString(pModule, "my_function1");
-  PyObject* pmy_func2 = PyObject_GetAttrString(pModule, "my_function2");
-  PyObject* pcollect  = PyObject_GetAttrString(pModule, "collect");
-  PyObject* panalyze  = PyObject_GetAttrString(pModule, "analyze");
-  PyObject* panalyze2 = PyObject_GetAttrString(pModule, "analyze2");
-  */
   PyObject* pcollect = PyObject_GetAttrString(pModule, "collection_func");
   PyObject* py_PlotField = PyObject_GetAttrString(pModule, "analyses_plotField");
   PyObject* py_SVD = PyObject_GetAttrString(pModule, "analyses_SVD");
@@ -151,14 +144,6 @@ int main() {
 	pynalyze(py_SVD); //Do Tensorflow stuff  
 	Py_DECREF(py_SVD);
       }
-  /*    
-  FILE *outfile = fopen("results.csv", "w");
-  for (int i = 0; i < N + 2; ++i) {
-    fprintf(outfile, "%f\n", result_parallel[i]);
-  }
-  fclose(outfile);
-  */
-
 }
 
 
