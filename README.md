@@ -63,7 +63,7 @@ $ main.exe
 ## Feature
 
 ### Using CuPY to enable zero-copy, in-situ analysis
-In CuPY, `cupy.ndarray` is the counterpart of the NumPy `numpy.ndarray` which provides an interface for fixed-size multi-dimensional array which resides on a CUDA device.  Low-level CUDA support in CuPY allows us to retreive device memory. For example,
+In CuPY, `cupy.ndarray` is the counterpart of the NumPy `numpy.ndarray` which provides an interface for fixed-size multi-dimensional array which resides on a CUDA device.  Low-level CUDA support in CuPY allows us to retrieve device memory. For example,
 
 ```
 import cupy
@@ -74,10 +74,12 @@ from cupy.cuda import memory
                   a.__array_interface__['shape'][0],
                   cupy.dtype(a.dtype.name),
                   cupy.cuda.MemoryPointer(cupy.cuda.UnownedMemory(
-                                             a.__array_interface__['data'][0], #<---Pointer?
+                                             a.__array_interface__['data'][0], 
                                              a.size,
                                              a,
                                              0), 0),
                   strides=a.__array_interface__['strides'])
 
-``` 
+```
+
+Additional information on CuPY `cupy.ndarray` attributes can be found [here](https://docs.cupy.dev/en/stable/reference/generated/cupy.ndarray.html#cupy.ndarray) 
