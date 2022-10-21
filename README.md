@@ -92,4 +92,4 @@ from cupy.cuda import memory
 
 ```
 
-Additional information on CuPY `cupy.ndarray` attributes can be found [here](https://docs.cupy.dev/en/stable/reference/generated/cupy.ndarray.html#cupy.ndarray) 
+Additional information on `cupy.ndarray` attributes can be found [here](https://docs.cupy.dev/en/stable/reference/generated/cupy.ndarray.html#cupy.ndarray) 
