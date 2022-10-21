@@ -23,6 +23,7 @@ While this example demonstrates a coupling with CUDA, it is possible to integrat
 
 ## Requirements
 
+- A CUDA device (e.g. NVIDIA V100 GPU) 
 - CUDA compiler (e.g. nvcc) that come with CUDA Toolkit (preferably v10.2 or above)
 - Python Environment (v3.7.0 or above)
 - CuPY (see [installation](https://docs.cupy.dev/en/stable/install.html))
@@ -61,7 +62,7 @@ Field_evolution.png SVD_Eigenvectors.png ...
 
 ```
 
-## What you should see when you run this on ThetaGPU
+## What you should see when you run this
 
 ### Field Evolution
 ![Fields](output/Field_evolution.png "Fields")
