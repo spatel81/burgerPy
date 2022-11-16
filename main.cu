@@ -133,10 +133,8 @@ int main() {
 
       //Plot the field
       {
-
         pynalyze(py_PlotField);  //collect to global python data array  
 	Py_DECREF(py_PlotField);
-
       }
 
       //SVD
@@ -145,7 +143,6 @@ int main() {
 	Py_DECREF(py_SVD);
       }
 }
-
 
 //Python Wrappers
 void PyIt(PyObject *p_func, double *u)
@@ -167,7 +164,6 @@ void PyIt(PyObject *p_func, double *u)
   Py_DECREF(pValue);
   // We don't need to decref array_1d because PyTuple_SetItem steals a reference
 }
-
 
 void pynalyze(PyObject *p_func)
 {
